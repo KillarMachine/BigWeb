@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Computer Shop</title>
+    <script src="server.js"></script>
+    <script src="website.js"></script>
+    <style>
+            /* Home */
+*{
+    margin: 0px;
+    color: black;
+}
+#RealTime{
+    background-color: gray;
+    color:rgb(33, 33, 33);
+    width: 400px;
+    border: 2px solid gray;
+    border-radius: 30px;
+    padding: 10px 0px;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+h1{
+    margin: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+.text p,.text li{
+    list-style: square;
+    margin: 0px 20px;
+    padding: 20px;
+    font-size: 20px;
+}
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title::before {
+    content: "";
+    background-image: url('logoblack.jpg');
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    height: 1100px;
+    width: 100vw;
+    z-index: -1;
+    /* opacity: 0.7; */
+}
+.box {
+    padding: 5px 5px;
+    margin: 10px 10px;
+    text-align: center;
+}
+
+#box-1 img {
+    width: 5rem;
+    transition: all;
+    transition-duration: 2s;
+}
+
+#box-1 {
+    transition: all 2s;
+    position: relative;
+}
+
+#box-1:hover {
+    transform: scale(1.5);
+}
+
+#box-1 h2 {
+    padding: 0px;
+    margin: 0px;
+    line-height: 1;
+    font-size: 12px;
+}
+
+#box-2 ul {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+#box-2 li {
+    list-style: none;
+}
+
+#box-2 a {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    margin: 10px 50px;
+    padding: 10px 10px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+#box-2 a:hover {
+    color: gray;
+    box-shadow: inset 2px 2px 10px gray;
+    border-radius: 10px;
+    font-size: 40px;
+}
+
+#box-3 input {
+    font-size: 15px;
+    margin: 20px 0px;
+    width: 170px;
+    transition: all 2s;
+    opacity: 0.5;
+}
+
+#box-3 input:hover {
+    /* font-size: 30px; */
+    width: 250px;
+    color: black;
+    opacity: 0.7;}
+     
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <div class="box" id="box-1">
+            <img src="logo2.png" alt="LOGO MISSING">
+            <h2>COMPUTER SHOP</h2>
+        </div>
+        <div class="box" id="box-2">
+            <ul>
+                <li><a href="home">Home</a></li>
+                <li><a href="buy">Buy</a></li>
+                <li><a href="sale">Sale</a></li>
+                <li><a href="http://www.whatsapp.com">Contect US</a></li>
+            </ul>
+        </div>
+        <div class="box" id="box-3">
+            <input type="text" placeholder="Search Here">
+        </div>
+    </div>
+    <div class="text">
+
+        <h1 id="change">Welcome to our website</h1>
+        <p>Here we have the best computer parts avaliable. From 20 years old GPUs to new latest High-End graphics Cards such
+        RTX 4090 and RX7600XT. New and old, both graphics cards and other pc components are also avaliable.</p>
+        <p> Note: Once the order is recieved can not be returned without any proper reason. Physics shops are present in every province
+        in pakistan. Outer country may contect us through 03146483423. Per shiping we cut 20% GST.</p>
+        <p>
+            Different Locations of our physical shop in Pakistan
+        </p>
+        <p>
+            <ul>
+                <li>Peshawar</li>
+                <li>Lahore</li>
+                <li>Karachi</li>
+                <li>Kohat</li>
+                <li>Kashmir</li>
+                <li>Kolkata</li>
+            </ul>
+        </p>
+    </div>
+    <div id="RealTime">
+        
+    </div>
+</body>
+
+</html>
